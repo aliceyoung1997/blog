@@ -1,0 +1,18 @@
+@mixin btn-style(){
+  border:1px solid rgb(123, 128, 123);
+  text-decoration:none;
+  border-radius: 3px;
+}
+
+@mixin flex($display,$justify:normal,$align:normal,$direction:row){
+  display: $display;
+  @if $justify !=normal {
+    justify-content: $justify;
+  }
+  @if $align !=normal{
+    align-items:$align;
+  }
+  @if $direction != row{
+    flex-direction:$direction;
+  }
+}

@@ -1,0 +1,276 @@
+nav {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background: white;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+  border-right: 1px solid grey;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    display: block;
+    height: 90px;
+  }
+}
+
+.navbar__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.navbar__title a:hover {
+  color: #7b807b;
+}
+.navbar__list {
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar__archives:hover {
+  color: #7b807b;
+}
+.navbar__about:hover {
+  color: #7b807b;
+}
+.navbar__travel:hover {
+  color: #7b807b;
+}
+.navbar__life:hover {
+  color: #7b807b;
+}
+.navbar__edit {
+  position: relative;
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.blog__btn {
+  position: absolute;
+  right: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.blog__btn a:hover {
+  color: #7b807b;
+}
+@media screen and (max-width: 768px) {
+  .blog__btn {
+    right: 10%;
+  }
+}
+
+.banner {
+  width: 100%;
+  margin: 0 auto;
+}
+.banner__pic {
+  height: 500px;
+  background: url(fuji.jpg) center/cover no-repeat;
+  border-radius: 5px;
+}
+.banner__edit {
+  background: black;
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+.banner__text {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-size: 30px;
+  transform: translate(-50%, -50%);
+}
+
+.article {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #7b807b;
+  display: flex;
+  flex-direction: column;
+}
+.article__title {
+  margin-bottom: 0;
+  text-align: center;
+}
+.article__published-time {
+  text-align: center;
+  font-size: 20px;
+  color: #7b807b;
+  padding: 10px 0;
+}
+.article__content {
+  padding-bottom: 10px;
+  max-height: 144px;
+  overflow: hidden;
+  line-height: 1.5em;
+}
+.article__content__all {
+  line-height: 1.5em;
+}
+.article__read-btn {
+  border: 1px solid #7b807b;
+  text-decoration: none;
+  border-radius: 3px;
+  color: black;
+  font-size: 14px;
+  padding: 10px;
+  display: inline-block;
+  align-self: flex-end;
+  margin: 5px 0;
+}
+.article__add {
+  width: 80%;
+  margin: 0 auto 100px;
+  padding: 30px;
+  border: 1px solid #7b807b;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -50px;
+  background: white;
+}
+.article__add__title {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.article__add__content {
+  padding-top: 10px;
+}
+.article__page {
+  width: 900px;
+  margin: 0 auto 100px;
+  display: flex;
+  flex-direction: column;
+}
+.article__list {
+  width: 80%;
+  margin: 0 auto 100px;
+  padding: 10px 20px;
+  position: relative;
+  top: -50px;
+  background: white;
+}
+.article__edit {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #7b807b;
+}
+.article__edit__title {
+  flex: 1;
+}
+.article__edit__published-time {
+  color: #7b807b;
+  margin-right: 5px;
+}
+
+.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.paginator a {
+  border: 1px solid #7b807b;
+  text-decoration: none;
+  border-radius: 3px;
+  margin: 0 10px;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+.paginator a:hover {
+  color: #7b807b;
+  background: rgba(199, 199, 199, 0.829);
+}
+
+.wrapper__log-in {
+  width: 40%;
+  margin: 100px auto;
+  border: 1px solid #7b807b;
+  border-radius: 5px;
+}
+.wrapper__log-in h1 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.log__in {
+  width: 80%;
+  margin: 0 auto;
+}
+.log__in input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  display: block;
+}
+.log__in label {
+  display: block;
+}
+
+.username, .username__input, .password, .password__input {
+  margin: 10px 0;
+}
+
+.sign__in__btn {
+  margin: 60px 0 80px;
+  background: black;
+  color: white;
+}
+.sign__in__btn:hover {
+  cursor: pointer;
+}
+
+.error {
+  color: brown;
+}
+
+.edit__body {
+  padding: 0;
+}
+
+.submit__article {
+  width: 80px;
+  height: 40px;
+  margin: 10px 0;
+  align-self: flex-end;
+  background: white;
+  border: 1px solid #7b807b;
+  border-radius: 3px;
+}
+
+.edit__btn, .delete__btn {
+  border: 1px solid #7b807b;
+  text-decoration: none;
+  border-radius: 3px;
+  color: #7b807b;
+  background: white;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */
